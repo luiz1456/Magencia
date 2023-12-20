@@ -1,0 +1,65 @@
+.sectionXpJob {
+    padding: 100px 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #f6f8fc;
+}
+
+.SubtituloSectionXp {
+    color: #32333c;
+    font-size: 35px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.SubtituloSectionXp::before {
+    content: "";
+    display: block;
+    background-color: #feb633;
+    width: 110px;
+    height: 4px;
+    position: absolute;
+    bottom: 0px;
+    border-radius: 5px;
+}
+
+.paragrafoSobre {
+    max-width: 600px;
+    padding-bottom: 60px;
+    color: #8a8fa3;
+    font-size: 14px;
+}
+
+.containerCard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+@media (max-width: 768px) {
+    .containerCard {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 570px) {
+    .sectionXpJob {
+        padding: 60px 20px;
+    }
+}
+
+.sectionXpJob-dark-mode {
+    background-color: #393838;
+}
+
+.sectionXpJob-dark-mode .SubtituloSectionXp,
+.sectionXpJob-dark-mode .paragrafoSobre {
+    color: #cccccc;
+}

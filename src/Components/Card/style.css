@@ -1,0 +1,46 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 1px solid #edecec;
+    width: 300px;
+    height: 350px;
+    padding: 60px 15px;
+    text-align: start;
+    box-shadow: 0 0 10px 4px #00000011;
+}
+
+.card p {
+    color: #8a8fa3;
+}
+.card:hover {
+    background-color: #feb633;
+    border-color: #edecec;
+}
+
+.card:hover p {
+    color: #fff;
+}
+
+.card h3 {
+    color: #32333c;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: auto;
+    }
+}
+
+.card-dark-mode {
+    border: #ffffff0d;
+    box-shadow: 0 0 10px 4px #ffffff11;
+}
+
+.card-dark-mode p {
+    color: #9f9f9f;
+}
+
+.card-dark-mode h3 {
+    color: #fff;
+}
