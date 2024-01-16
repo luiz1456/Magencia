@@ -42,6 +42,10 @@
     .containerTextoBanner {
         width: 100%;
     }
+
+    .sectionBanner {
+        height: 50vh;
+    }    
 }
 
 .sectionBanner-dark-mode {
