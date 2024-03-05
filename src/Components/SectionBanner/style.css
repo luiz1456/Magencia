@@ -35,6 +35,10 @@
 }
 
 @media (max-width: 768px) {
+    .sectionBanner {
+        height: 50vh;
+    }
+
     .imgBanner {
         display: none;
     }

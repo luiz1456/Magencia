@@ -6,19 +6,17 @@ import Footer from './Components/Footer'
 import { useState } from 'react'
 
 function App() {
-  const [darkActive,setState] = useState(false)
-
-  const alterarTema = () => {
-    setState(!darkActive)
-  }
-
+  const [darkActive, setDarkActive] = useState(false)
 
   return (
     <>
-      <Header darkActive = {darkActive} alterarTema={alterarTema}/>
-      <SectionBanner darkActive = {darkActive} />
-      <XpJob darkActive = {darkActive} />
-      <Footer darkActive = {darkActive} />
+      <Header
+        darkActive={darkActive}
+        setDarkActive={setDarkActive}
+      />
+      <SectionBanner darkActive={darkActive} />
+      <XpJob darkActive={darkActive} />
+      <Footer darkActive={darkActive} />
     </>
   )
 }

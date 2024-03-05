@@ -22,6 +22,11 @@ header {
 .botao img {
     width: 25px;
     height: 25px;
+    
+}
+
+.animation-flip {
+    animation: flip 500ms ease-in-out;
 }
 
 .Header-dark-mode {
@@ -31,4 +36,16 @@ header {
 .Header-dark-mode .botao {
     background-color: #252525;
     border-color: #fff;
+}
+
+@keyframes flip {
+    0% {
+        transform: scaleX(100%);
+    }
+    50% {
+        transform: scaleX(0%);
+    }
+    100% {
+        transform: scaleX(100%);
+    }
 }
